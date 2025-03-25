@@ -69,7 +69,25 @@ function playRound(humanChoice,computerChoice) {
 
 }
 
-let humanSelection = getHumanChoice();
-let computerSelection = getComputerChoice();
+
 let humanScore = 0;
 let computerScore = 0;
+
+for(let i=0; i<=4; i++){
+
+    let humanSelection = getHumanChoice();
+    let computerSelection = getComputerChoice();
+    playRound(humanSelection, computerSelection);
+    console.log(`\nHuman Score = ${humanScore} \nComputer Score = ${computerScore}\n`)
+}
+
+if (humanScore>computerScore){
+    console.log("YOU WON THE BATTLE");
+}    
+else if (humanScore<computerScore){
+    console.log("SORRY, YOU LOST THE BATTLE");
+}
+else{
+    console.log("BATTLE TIEEDDDD");
+}
+
