@@ -17,3 +17,10 @@ function getComputerChoice() {
     return computerChoice;
 }
 
+function getHumanChoice() {
+    let humanChoice = prompt("Stone, Paper or Scissor?");
+    return humanChoice;
+}
+
+let humanScore = 0;
+let computerScore = 0;
